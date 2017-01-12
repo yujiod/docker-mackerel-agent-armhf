@@ -2,7 +2,7 @@ FROM armv7/armhf-ubuntu:xenial
 
 ENV MACKEREL_VERSION=0.39.0
 
-RUN apt update && apt -y upgrade && apt -y install curl
+RUN apt update && apt -y upgrade && apt -y install curl net-tools
 
 RUN cd /tmp && \
     curl -fsSL https://github.com/mackerelio/mackerel-agent/releases/download/v${MACKEREL_VERSION}/mackerel-agent_linux_arm.tar.gz | tar xzf - && \
