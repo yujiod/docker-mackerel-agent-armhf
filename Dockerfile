@@ -1,6 +1,6 @@
 FROM armv7/armhf-ubuntu:xenial
 
-ENV MACKEREL_VERSION=0.39.0
+ENV MACKEREL_VERSION=0.42.1
 
 RUN apt update && apt -y upgrade && apt -y install curl net-tools
 
